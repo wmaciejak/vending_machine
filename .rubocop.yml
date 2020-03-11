@@ -1,0 +1,21 @@
+require: rubocop-rspec
+
+AllCops:
+  DisplayCopNames: true
+
+Documentation:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Exclude:
+    - "spec/unit/services/money_change_spec.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Layout/LineLength:
+  Max: 100
